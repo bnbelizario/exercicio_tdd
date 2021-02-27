@@ -8,12 +8,14 @@ import boleto.Boleto;
 public class Fatura {
 	 
 	 private String nomeCliente;
-	 private float valorTotal;
+	 private double valorTotal;
+	 private int codFatura;
 	 Date data = new Date();
 	 private ArrayList<Pagamento> pagamentos = new ArrayList();
 	 	 
-	 public Fatura (String nomeCliente, float valorTotal) {
+	 public Fatura (String nomeCliente, double valorTotal, int codFatura, Date data) {
 		 this.nomeCliente = nomeCliente;
 		 this.valorTotal = valorTotal;
+		 this.data = data;
 	 }
 }
