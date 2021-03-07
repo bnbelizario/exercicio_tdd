@@ -45,7 +45,7 @@ public class ProcessadorBoletoTest {
 		boletos.add(boleto2);
 		boletos.add(boleto3);
 		
-		processaBoleto.pagarFatura(boletos, fatura);
+		processadorBoleto.pagarFatura(boletos, fatura);
 		
 		assertTrue(fatura.getPago());
 	}
