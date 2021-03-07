@@ -14,4 +14,8 @@ public class Boleto {
 		 this.codigo = codigo;
 		 this.data = new Date();
 	 }
+	 
+	 public double getValorPago() {
+		 return this.valorPago;
+	 }
 }

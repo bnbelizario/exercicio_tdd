@@ -33,7 +33,7 @@ public class ProcessadorBoletoTest {
 	public void testFaturaPagaError() {
 		processadorBoleto.pagar(boletos, fatura);
 		
-		assertFalse(fatura.paga?());
+		assertFalse(fatura.pagou());
 	}
 
 	@Test
@@ -45,8 +45,8 @@ public class ProcessadorBoletoTest {
 		boletos.add(boleto2);
 		boletos.add(boleto3);
 		
-		processadorBoleto.pagarFatura(boletos, fatura);
+		processadorBoleto.pagar(boletos, fatura);
 		
-		assertTrue(fatura.getPago());
+		assertTrue(fatura.pagou());
 	}
 }
